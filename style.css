@@ -1,82 +1,156 @@
-/* Styles globaux */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #000; /* Fond noir pour simuler l'espace */
-  color: #fff;
-  line-height: 1.6;
+* {margin: 0;padding: 0;}
+
+body{font-family: 'Montserrat', sans-serif};
+
+
+#page {
+    min-height: 200px;
+    width: 60%;
+    min-width: 600px;
+    background: whitesmoke;
+    margin: 50px auto;
+    padding: 30px;
+    color: #27aae1;
 }
 
-header {
-  background: #1e1e1e;
-  padding: 20px 10px;
-  text-align: center;
+
+.photo-and-name {
+    /* NO STYLE NEEDED YET */
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+.photo {
+    width: 150px; /* Ajuste la taille selon tes besoins */
+    height: 150px;
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Assure que l'image s'ajuste bien */
+    border: 3px solid #fff; /* Optionnel : ajoute une bordure blanche */
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.contact-info-box {
+    width: 70.9%;
+    display: inline-block;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 5px 10px;
-  transition: background 0.3s;
+.name {
+    margin-bottom: -5px;
+}
+.job-title {
+    display: inline-block;
 }
 
-nav a:hover {
-  background: #444;
-  border-radius: 5px;
+.contact-details {
+    background: #27aae1;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
 }
 
-.intro {
-  padding: 20px;
-  text-align: center;
+#objective {
+    
 }
 
-.planets {
-  padding: 20px;
+#objective h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
 }
 
-.planets .planet-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 10px;
+#objective p {
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #000;
+}
+#Compétences h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
 }
 
-.planet-card {
-  background: #222;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
+#Compétences p {
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #050000;
+}
+#education h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
 }
 
-.planet-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+#education table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
 }
 
-.facts {
-  padding: 20px;
-  text-align: center;
+#education table tr.school-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
 }
 
-footer {
-  background: #1e1e1e;
-  color: #ccc;
-  text-align: center;
-  padding: 10px;
+#education table tr.school-2 td:first-child {
+    padding-bottom: 25px;
+}
+
+#work h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#work table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#work table tr.work-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#work table tr.work-1 td {
+    padding-bottom: 25px;
+}
+
+#work table tr.work-2 td:first-child {
+    width: 120px;
+    color: gray;
+}
+
+#bio-data h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#bio-data table td {
+    padding: 8px;
+    font-size: 15px;
+    color: #000;
+}
+
+#bio-data table tr td:first-child {
+    width: 200px;
+}
+
+#bio-data table tr td:nth-child(2) {
+    width: 300px;
 }
